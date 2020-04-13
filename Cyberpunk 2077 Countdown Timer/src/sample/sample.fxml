@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Scene xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <root>
-      <GridPane id="root" fx:id="root" alignment="center" hgap="10" vgap="10">
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-         </rowConstraints>
-         <columnConstraints>
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-         </columnConstraints>
-         <children>
-            <Button fx:id="btn" mnemonicParsing="false" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-         </children>
-      </GridPane>
-   </root>
-</Scene>
+<GridPane id="root" fx:id="root" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      </rowConstraints>
+      <columnConstraints>
+         <ColumnConstraints maxWidth="95.0" minWidth="10.0" prefWidth="85.0" />
+         <ColumnConstraints maxWidth="164.0" minWidth="10.0" prefWidth="107.80000000000001" />
+         <ColumnConstraints maxWidth="230.0" minWidth="10.0" prefWidth="209.0" />
+         <ColumnConstraints maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+         <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <children>
+         <Button fx:id="playBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Play" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+         <Button fx:id="stopBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Stop" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Button fx:id="choosePlaylist" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Pick playlist" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="timer" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      </children>
+   </GridPane>
