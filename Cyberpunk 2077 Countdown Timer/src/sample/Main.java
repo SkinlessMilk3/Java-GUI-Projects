@@ -87,21 +87,23 @@ public class Main extends Application {
         ch.setTitle("Choose playlist");
         File dir = ch.showDialog(stage);
 
-        for(String file : dir.list(new FilenameFilter() {
-            @Override
-            public boolean accept(File file, String s) {
-                for(String ch : SUPPORTED_FILE_EXTENSIONS)
-                    if(s.endsWith(ch)){
+        if(dir != null) {
+            for (String file : dir.list(new FilenameFilter() {
+                @Override
+                public boolean accept(File file, String s) {
+                    for (String ch : SUPPORTED_FILE_EXTENSIONS)
+                        if (s.endsWith(ch)) {
 
 
-                        return true;
-                    }
+                            return true;
+                        }
 
-                return false;
+                    return false;
+                }
+            })) {
+                String path = "file:///" + (dir + "\\" + file).replace("\\", "/").replaceAll(" ", "%20");
+                players.add(new MediaPlayer(new Media(path)));
             }
-        })){
-            String path = "file:///" + (dir + "\\" + file).replace("\\", "/").replaceAll(" ", "%20");
-            players.add(new MediaPlayer(new Media(path)));
         }
     }
 

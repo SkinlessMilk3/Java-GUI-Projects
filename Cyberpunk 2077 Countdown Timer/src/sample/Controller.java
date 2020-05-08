@@ -41,7 +41,7 @@ public class Controller implements Initializable {
 
         Main obj = new Main();
 
-        Image img = new Image(getClass().getResourceAsStream("metro-en.jpg"));
+        Image img = new Image(getClass().getResourceAsStream("Metro-en.jpg"));
         root.setBackground(new Background(new BackgroundImage(img, BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT)));
 
         timer.setTextFill(Color.WHITE);
