@@ -1,4 +1,4 @@
-package Events;
+package API.Events;
 
 public enum EventType {
     keypressed(1), keyreleased(2),

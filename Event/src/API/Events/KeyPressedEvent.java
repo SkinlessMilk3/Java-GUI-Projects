@@ -1,5 +1,6 @@
-package Events;
-
+package API.Events;
+//import API.Events.Event;
+//import API.Events.EventType;
 public class KeyPressedEvent /*extends KeyEvent{*/extends Event {
 
 

@@ -1,6 +1,6 @@
 package API.Events;
-import Events.EventType;
-import Events.EventCategory;
+//import Events.EventType;
+//import Events.EventCategory;
 
 public abstract class Event {
 

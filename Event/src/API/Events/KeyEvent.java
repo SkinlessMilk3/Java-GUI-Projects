@@ -1,4 +1,4 @@
-package Events;
+package API.Events;
 
 import jdk.jfr.Event;
 
