@@ -1,3 +1,0 @@
-[submodule "Event/vendor/LWJGL"]
-	path = Event/vendor/LWJGL
-	url = https://github.com/LWJGL/lwjgl3
